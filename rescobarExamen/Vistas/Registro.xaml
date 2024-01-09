@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rescobarExamen.Vistas.Registro"
+             Title="Registro">
+    <VerticalStackLayout>
+        <Label x:Name="lblUsuario" 
+               FontSize="14"
+               HorizontalTextAlignment="Center"
+               TextColor="Blue"/>
+        <Label 
+            Text="REGISTRO"
+            TextColor="Blue"
+            FontSize="22"
+            HorizontalTextAlignment="Center"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="FECHA"
+                   FontSize="14"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+            <DatePicker x:Name="Fecha" Date="08/01/2024"
+                        Grid.Row="0"
+                        Grid.Column="1"/>
+            
+            <Label Text="PAÍS"
+                   FontSize="14"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+            <Picker x:Name="pkPais" Title="País" TextColor="Blue" Grid.Row="1" Grid.Column="1">
+                <Picker.Items>
+                    <x:String>Ecuador</x:String>
+                    <x:String>Brasil</x:String>
+                    <x:String>Colombia</x:String>
+                    <x:String>Peru</x:String>
+                    <x:String>Venezuela</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="CIUDAD"
+                   FontSize="14"
+                   Grid.Row="2"
+                   Grid.Column="0"/>
+            <Picker x:Name="pkCiudad" Title="ciudad" TextColor="Blue" Grid.Row="2" Grid.Column="1">
+                <Picker.Items>
+                    <x:String>Quito</x:String>
+                    <x:String>Santo Domingo</x:String>
+                    <x:String>Ibarra</x:String>
+                    <x:String>Quevedo</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Monto Inicial"
+                   FontSize="14"
+                   Grid.Row="3"
+                   Grid.Column="0"/>
+            <Entry x:Name="txtInicial"
+                   Placeholder="Ingrese monto"
+                   TextChanged="txtInicial_TextChanged"
+                   Grid.Row="3"
+                   Grid.Column="1"/>
+
+            <Label Text="Pago Mensual"
+                   FontSize="14"
+                   Grid.Row="4"
+                   Grid.Column="0"/>
+            <Entry x:Name="txtPago"
+                   TextChanged="txtPago_TextChanged"
+                   IsReadOnly="True"
+                   Grid.Row="4"
+                   Grid.Column="1"/>
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nombre"
+                   FontSize="14"
+                   Grid.Row="0"
+                   Grid.Column="0"/>
+            <Entry x:Name="txtNombre"
+                   TextChanged="txtNombre_TextChanged"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+
+            <Label Text="Apellido"
+                   FontSize="14"
+                   Grid.Row="0"
+                   Grid.Column="1"/>
+            <Entry x:Name="txtApellido"
+                   TextChanged="txtApellido_TextChanged"
+                   Grid.Row="1"
+                   Grid.Column="1"/>
+            
+            <Label Text="Edad"
+                   FontSize="14"
+                   Grid.Row="0"
+                   Grid.Column="2"/>
+            <Entry x:Name="txtEdad"
+                   TextChanged="txtEdad_TextChanged"
+                   Grid.Row="1"
+                   Grid.Column="2"/> 
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
