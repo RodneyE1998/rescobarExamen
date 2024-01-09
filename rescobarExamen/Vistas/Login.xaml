@@ -47,12 +47,14 @@
                     Text="Iniciar Sesión"
                     Clicked="btnIniciar_Clicked"
                     Grid.Row="2"
-                    Grid.Column="0"/>
+                    Grid.Column="0"
+                    BackgroundColor="Blue"/>
             <Button x:Name="btnAcerca"
-                    Text="Acerca"
+                    Text="Acerca De"
                     Clicked="btnAcerca_Clicked"
                     Grid.Row="2"
-                    Grid.Column="1"/>
+                    Grid.Column="1"
+                    BackgroundColor="Blue"/>
 
         </Grid>
     </VerticalStackLayout>

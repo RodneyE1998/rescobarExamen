@@ -32,6 +32,6 @@ public partial class Login : ContentPage
 
     private void btnAcerca_Clicked(object sender, EventArgs e)
     {
-        DisplayAlert("Bienvenido", "Creado por Rodney Escobar \n Ingenieria en Sistemas \n Octavo Semestre", "Cerrar");
+        DisplayAlert("B", "Creado por Rodney Escobar \n Ingenieria en Sistemas \n Octavo Semestre", "Cerrar");
     }
 }
